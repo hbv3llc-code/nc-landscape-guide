@@ -25,7 +25,7 @@ const config: Config = {
         ui: ["DM Sans", "sans-serif"],
       },
       maxWidth: {
-        content: "760px",
+        content: "860px",
       },
     },
   },
