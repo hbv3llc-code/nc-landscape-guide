@@ -67,6 +67,14 @@ export default function Header() {
             </li>
             <li>
               <Link
+                href="/blog/"
+                className="font-ui text-sm font-medium text-text-muted no-underline hover:text-accent"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/about/"
                 className="font-ui text-sm font-medium text-text-muted no-underline hover:text-accent"
               >
