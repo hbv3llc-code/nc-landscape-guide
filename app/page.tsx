@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { pageMeta } from '@/lib/metadata';
+import SchemaOrg from '@/components/SchemaOrg';
+import { webPageSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: pageMeta.home.title,
@@ -50,7 +52,18 @@ const cityPages = [
 ];
 
 export default function HomePage() {
+  const schemas = [
+    webPageSchema({
+      title: pageMeta.home.title,
+      description: pageMeta.home.description,
+      url: pageMeta.home.canonical,
+    }),
+    breadcrumbSchema([]),
+  ];
+
   return (
+    <>
+      <SchemaOrg schema={schemas} />
     <main className="max-w-content mx-auto px-4 py-10">
       {/* Hero */}
       <div className="mb-10 pb-8 border-b border-border">
@@ -144,5 +157,6 @@ export default function HomePage() {
         </p>
       </section>
     </main>
+    </>
   );
 }

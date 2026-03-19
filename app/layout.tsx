@@ -3,6 +3,8 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import DisclaimerBanner from '@/components/DisclaimerBanner';
+import SchemaOrg from '@/components/SchemaOrg';
+import { websiteSchema, organizationSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: {
@@ -17,6 +19,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <SchemaOrg schema={[websiteSchema(), organizationSchema()]} />
+      </head>
       <body className="bg-bg text-text antialiased min-h-screen flex flex-col">
         <DisclaimerBanner />
         <Header />

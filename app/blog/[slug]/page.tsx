@@ -8,6 +8,8 @@ import { getAllBlogSlugs, getBlogPost } from '@/lib/content';
 import Breadcrumb from '@/components/Breadcrumb';
 import PageHeader from '@/components/PageHeader';
 import TableOfContents from '@/components/TableOfContents';
+import SchemaOrg from '@/components/SchemaOrg';
+import { blogPostingSchema, breadcrumbSchema } from '@/lib/schema';
 
 interface Props {
   params: { slug: string };
@@ -53,8 +55,23 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const { frontmatter, content } = post;
+  const canonical = `https://nclcrb.org/blog/${params.slug}/`;
+  const schemas = [
+    breadcrumbSchema([
+      { name: 'Blog', href: '/blog/' },
+      { name: frontmatter.title, href: canonical },
+    ]),
+    blogPostingSchema({
+      title: frontmatter.title,
+      description: frontmatter.description,
+      url: canonical,
+      datePublished: frontmatter.publishDate,
+    }),
+  ];
 
   return (
+    <>
+      <SchemaOrg schema={schemas} />
     <div className="max-w-content mx-auto px-4 py-10 flex gap-10">
       <main className="flex-1 min-w-0">
         <Breadcrumb items={[{ label: 'Blog', href: '/blog/' }, { label: frontmatter.title }]} />
@@ -83,5 +100,6 @@ export default async function BlogPostPage({ params }: Props) {
         <TableOfContents items={frontmatter.toc} />
       )}
     </div>
+    </>
   );
 }
