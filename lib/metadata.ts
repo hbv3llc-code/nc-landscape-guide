@@ -1,0 +1,216 @@
+export interface PageMeta {
+  title: string;
+  description: string;
+  canonical: string;
+  ogTitle: string;
+  ogDescription: string;
+}
+
+const BASE_URL = 'https://nclcrb.org';
+
+export const pageMeta: Record<string, PageMeta> = {
+  home: {
+    title: 'North Carolina Landscape Contractor Licensing Guide | NCLCRG',
+    description: 'Independent guide to North Carolina landscape contractor licensing. Requirements, exams, renewal, laws, and resources for contractors and homeowners statewide.',
+    canonical: `${BASE_URL}/`,
+    ogTitle: 'North Carolina Landscape Contractor Licensing Guide | NCLCRG',
+    ogDescription: 'Independent guide to North Carolina landscape contractor licensing. Requirements, exams, renewal, laws, and resources for contractors and homeowners statewide.',
+  },
+  'how-to-get-a-landscape-contractor-license-in-nc': {
+    title: 'How to Get a Landscape Contractor License in NC | NCLCRG',
+    description: 'Step-by-step guide to obtaining a landscape contractor license in North Carolina. Covers eligibility, application, exam, and approval process.',
+    canonical: `${BASE_URL}/how-to-get-a-landscape-contractor-license-in-nc/`,
+    ogTitle: 'How to Get a Landscape Contractor License in NC',
+    ogDescription: 'Step-by-step guide to obtaining a landscape contractor license in North Carolina.',
+  },
+  'nc-landscape-contractor-license-requirements': {
+    title: 'NC Landscape Contractor License Requirements | NCLCRG',
+    description: 'Detailed requirements for obtaining a North Carolina landscape contractor license, including education, experience, and application prerequisites.',
+    canonical: `${BASE_URL}/nc-landscape-contractor-license-requirements/`,
+    ogTitle: 'NC Landscape Contractor License Requirements',
+    ogDescription: 'All requirements for obtaining a North Carolina landscape contractor license.',
+  },
+  'landscape-contractor-license-application-process-nc': {
+    title: 'Landscape Contractor License Application Process in NC | NCLCRG',
+    description: 'How to complete the NC landscape contractor license application. Forms, fees, supporting documents, and submission instructions explained.',
+    canonical: `${BASE_URL}/landscape-contractor-license-application-process-nc/`,
+    ogTitle: 'Landscape Contractor License Application Process in NC',
+    ogDescription: 'Complete guide to the NC landscape contractor license application process.',
+  },
+  'nc-landscape-contractor-exam': {
+    title: 'NC Landscape Contractor Licensing Exam Guide | NCLCRG',
+    description: 'Everything you need to know about the North Carolina landscape contractor exam — format, topics, study resources, and passing requirements.',
+    canonical: `${BASE_URL}/nc-landscape-contractor-exam/`,
+    ogTitle: 'NC Landscape Contractor Licensing Exam Guide',
+    ogDescription: 'Format, topics, and preparation tips for the NC landscape contractor exam.',
+  },
+  'nc-landscape-contractor-license-renewal': {
+    title: 'NC Landscape Contractor License Renewal | NCLCRG',
+    description: 'How to renew your North Carolina landscape contractor license — deadlines, continuing education requirements, fees, and renewal process.',
+    canonical: `${BASE_URL}/nc-landscape-contractor-license-renewal/`,
+    ogTitle: 'NC Landscape Contractor License Renewal',
+    ogDescription: 'Renew your NC landscape contractor license — deadlines, CEUs, and process.',
+  },
+  'landscape-contractor-continuing-education-nc': {
+    title: 'Landscape Contractor Continuing Education Requirements NC | NCLCRG',
+    description: 'Continuing education requirements for NC landscape contractor license renewal. Approved courses, credit hours, and compliance deadlines.',
+    canonical: `${BASE_URL}/landscape-contractor-continuing-education-nc/`,
+    ogTitle: 'Landscape Contractor Continuing Education Requirements NC',
+    ogDescription: 'CEU requirements and approved courses for NC landscape contractor renewal.',
+  },
+  'what-work-requires-a-landscape-license-nc': {
+    title: 'What Work Requires a Landscape Contractor License in NC | NCLCRG',
+    description: 'Which landscape and outdoor construction activities require a contractor license in North Carolina under Chapter 89D of NC General Statutes.',
+    canonical: `${BASE_URL}/what-work-requires-a-landscape-license-nc/`,
+    ogTitle: 'What Work Requires a Landscape License in NC',
+    ogDescription: 'Learn which outdoor and landscaping work legally requires a license in NC.',
+  },
+  'nc-landscape-contractor-laws-chapter-89d': {
+    title: 'NC Landscape Contractor Laws — Chapter 89D Overview | NCLCRG',
+    description: 'Plain-language summary of North Carolina General Statute Chapter 89D governing landscape contractor licensing, scope of practice, and enforcement.',
+    canonical: `${BASE_URL}/nc-landscape-contractor-laws-chapter-89d/`,
+    ogTitle: 'NC Landscape Contractor Laws — Chapter 89D',
+    ogDescription: 'Overview of Chapter 89D — the NC statute governing landscape contractor licensing.',
+  },
+  'penalties-for-unlicensed-landscaping-nc': {
+    title: 'Penalties for Unlicensed Landscaping Work in NC | NCLCRG',
+    description: 'Civil and criminal penalties for performing or contracting unlicensed landscape work in North Carolina under Chapter 89D.',
+    canonical: `${BASE_URL}/penalties-for-unlicensed-landscaping-nc/`,
+    ogTitle: 'Penalties for Unlicensed Landscaping Work in NC',
+    ogDescription: 'Consequences of performing unlicensed landscaping work in North Carolina.',
+  },
+  'landscape-contractor-insurance-bonding-nc': {
+    title: 'Landscape Contractor Insurance & Bonding Requirements NC | NCLCRG',
+    description: 'Insurance and bonding requirements for licensed landscape contractors in North Carolina, including liability coverage and surety bond details.',
+    canonical: `${BASE_URL}/landscape-contractor-insurance-bonding-nc/`,
+    ogTitle: 'Landscape Contractor Insurance & Bonding NC',
+    ogDescription: 'Insurance and surety bond requirements for NC landscape contractors.',
+  },
+  'nc-landscape-contractor-license-verification': {
+    title: 'NC Landscape Contractor License Verification | NCLCRG',
+    description: 'How to verify that a landscape contractor is currently licensed in North Carolina. Lookup tools and what to check before hiring.',
+    canonical: `${BASE_URL}/nc-landscape-contractor-license-verification/`,
+    ogTitle: 'NC Landscape Contractor License Verification',
+    ogDescription: 'How to verify a landscape contractor\'s NC license status before hiring.',
+  },
+  'landscape-contractor-license-reciprocity-nc': {
+    title: 'Landscape Contractor License Reciprocity in NC | NCLCRG',
+    description: 'Does North Carolina offer license reciprocity for landscape contractors from other states? Requirements and process for out-of-state applicants.',
+    canonical: `${BASE_URL}/landscape-contractor-license-reciprocity-nc/`,
+    ogTitle: 'Landscape Contractor License Reciprocity in NC',
+    ogDescription: 'Reciprocity options for out-of-state landscape contractors applying in NC.',
+  },
+  'nc-landscape-contractor-faq': {
+    title: 'NC Landscape Contractor Licensing FAQ | NCLCRG',
+    description: 'Frequently asked questions about landscape contractor licensing in North Carolina — eligibility, exams, renewal, penalties, and more.',
+    canonical: `${BASE_URL}/nc-landscape-contractor-faq/`,
+    ogTitle: 'NC Landscape Contractor Licensing FAQ',
+    ogDescription: 'Answers to the most common questions about NC landscape contractor licensing.',
+  },
+  'landscape-contractor-glossary-nc': {
+    title: 'Landscape Contractor Licensing Glossary — NC Terms | NCLCRG',
+    description: 'Definitions of key terms used in North Carolina landscape contractor licensing, including statutory and regulatory language from Chapter 89D.',
+    canonical: `${BASE_URL}/landscape-contractor-glossary-nc/`,
+    ogTitle: 'Landscape Contractor Licensing Glossary — NC Terms',
+    ogDescription: 'Key terms and definitions for NC landscape contractor licensing.',
+  },
+  'licensed-vs-unlicensed-landscape-contractors-nc': {
+    title: 'Licensed vs. Unlicensed Landscape Contractors in NC | NCLCRG',
+    description: 'Understand the legal and practical differences between licensed and unlicensed landscape contractors in North Carolina, and why it matters.',
+    canonical: `${BASE_URL}/licensed-vs-unlicensed-landscape-contractors-nc/`,
+    ogTitle: 'Licensed vs. Unlicensed Landscape Contractors in NC',
+    ogDescription: 'Why licensing status matters when hiring a landscape contractor in NC.',
+  },
+  'how-to-hire-a-licensed-landscape-contractor-nc': {
+    title: 'How to Hire a Licensed Landscape Contractor in NC | NCLCRG',
+    description: 'A homeowner\'s guide to verifying and hiring a properly licensed landscape contractor in North Carolina, including red flags to watch for.',
+    canonical: `${BASE_URL}/how-to-hire-a-licensed-landscape-contractor-nc/`,
+    ogTitle: 'How to Hire a Licensed Landscape Contractor in NC',
+    ogDescription: 'Tips for homeowners on verifying and hiring a licensed NC landscape contractor.',
+  },
+  'file-complaint-landscape-contractor-nc': {
+    title: 'How to File a Complaint Against a Landscape Contractor in NC | NCLCRG',
+    description: 'Process for filing a formal complaint against a landscape contractor in North Carolina, including who investigates and what outcomes are possible.',
+    canonical: `${BASE_URL}/file-complaint-landscape-contractor-nc/`,
+    ogTitle: 'File a Complaint Against a Landscape Contractor in NC',
+    ogDescription: 'How to report a landscape contractor problem to NC authorities.',
+  },
+  'landscape-contractor-vs-lawn-care-nc': {
+    title: 'Landscape Contractor vs. Lawn Care in NC — What\'s the Difference? | NCLCRG',
+    description: 'How North Carolina law distinguishes landscape contracting from lawn care and maintenance — and which activities require a license.',
+    canonical: `${BASE_URL}/landscape-contractor-vs-lawn-care-nc/`,
+    ogTitle: 'Landscape Contractor vs. Lawn Care in NC',
+    ogDescription: 'The legal distinction between landscape contracting and lawn care in NC.',
+  },
+  'types-of-landscape-work-nc': {
+    title: 'Types of Landscape Work in NC — Categories & License Requirements | NCLCRG',
+    description: 'Overview of landscape work categories in North Carolina, which require a contractor license, and which are exempt under Chapter 89D.',
+    canonical: `${BASE_URL}/types-of-landscape-work-nc/`,
+    ogTitle: 'Types of Landscape Work in NC',
+    ogDescription: 'Categories of landscape work in NC and their licensing requirements.',
+  },
+  about: {
+    title: 'About NCLCRG — NC Landscape Contractor Resource Guide | NCLCRG',
+    description: 'About the NC Landscape Contractor Resource Guide — an independent informational site providing guidance on landscape contractor licensing in North Carolina.',
+    canonical: `${BASE_URL}/about/`,
+    ogTitle: 'About NC Landscape Contractor Resource Guide',
+    ogDescription: 'An independent resource for landscape contractor licensing information in NC.',
+  },
+  // City pages
+  'landscape-contractor-license-raleigh-nc': {
+    title: 'Landscape Contractor License in Raleigh, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements and resources for contractors working in Raleigh, NC. State license requirements apply throughout Wake County.',
+    canonical: `${BASE_URL}/landscape-contractor-license-raleigh-nc/`,
+    ogTitle: 'Landscape Contractor License in Raleigh, NC',
+    ogDescription: 'NC landscape contractor licensing information for Raleigh and Wake County.',
+  },
+  'landscape-contractor-license-charlotte-nc': {
+    title: 'Landscape Contractor License in Charlotte, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements for contractors working in Charlotte and Mecklenburg County, NC. State licensing applies across all NC municipalities.',
+    canonical: `${BASE_URL}/landscape-contractor-license-charlotte-nc/`,
+    ogTitle: 'Landscape Contractor License in Charlotte, NC',
+    ogDescription: 'NC landscape contractor licensing information for Charlotte and Mecklenburg County.',
+  },
+  'landscape-contractor-license-greensboro-nc': {
+    title: 'Landscape Contractor License in Greensboro, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements for contractors working in Greensboro and Guilford County, NC under Chapter 89D.',
+    canonical: `${BASE_URL}/landscape-contractor-license-greensboro-nc/`,
+    ogTitle: 'Landscape Contractor License in Greensboro, NC',
+    ogDescription: 'NC landscape contractor licensing information for Greensboro and Guilford County.',
+  },
+  'landscape-contractor-license-durham-nc': {
+    title: 'Landscape Contractor License in Durham, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements for contractors working in Durham and Durham County, NC. State law governs all licensed landscaping activity.',
+    canonical: `${BASE_URL}/landscape-contractor-license-durham-nc/`,
+    ogTitle: 'Landscape Contractor License in Durham, NC',
+    ogDescription: 'NC landscape contractor licensing information for Durham and surrounding areas.',
+  },
+  'landscape-contractor-license-fayetteville-nc': {
+    title: 'Landscape Contractor License in Fayetteville, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements for contractors working in Fayetteville and Cumberland County, NC under state licensing law.',
+    canonical: `${BASE_URL}/landscape-contractor-license-fayetteville-nc/`,
+    ogTitle: 'Landscape Contractor License in Fayetteville, NC',
+    ogDescription: 'NC landscape contractor licensing information for Fayetteville and Cumberland County.',
+  },
+  'landscape-contractor-license-wilmington-nc': {
+    title: 'Landscape Contractor License in Wilmington, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements for contractors working in Wilmington and New Hanover County, NC under Chapter 89D.',
+    canonical: `${BASE_URL}/landscape-contractor-license-wilmington-nc/`,
+    ogTitle: 'Landscape Contractor License in Wilmington, NC',
+    ogDescription: 'NC landscape contractor licensing information for Wilmington and the Cape Fear region.',
+  },
+  'landscape-contractor-license-asheville-nc': {
+    title: 'Landscape Contractor License in Asheville, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements for contractors working in Asheville and Buncombe County, NC. NC state law applies to all landscape contracting.',
+    canonical: `${BASE_URL}/landscape-contractor-license-asheville-nc/`,
+    ogTitle: 'Landscape Contractor License in Asheville, NC',
+    ogDescription: 'NC landscape contractor licensing information for Asheville and Western NC.',
+  },
+  'landscape-contractor-license-winston-salem-nc': {
+    title: 'Landscape Contractor License in Winston-Salem, NC | NCLCRG',
+    description: 'Landscape contractor licensing requirements for contractors working in Winston-Salem and Forsyth County, NC under state licensing requirements.',
+    canonical: `${BASE_URL}/landscape-contractor-license-winston-salem-nc/`,
+    ogTitle: 'Landscape Contractor License in Winston-Salem, NC',
+    ogDescription: 'NC landscape contractor licensing information for Winston-Salem and Forsyth County.',
+  },
+};
